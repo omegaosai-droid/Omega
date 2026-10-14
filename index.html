@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><meta name="theme-color" content="#07111f">
+<title>PROJECT OMEGA — Online Arena</title>
+<link rel="stylesheet" href="/style.css">
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js"}}</script>
+</head>
+<body>
+<div id="game"></div>
+<div id="hud">
+  <div class="topbar"><div class="brand"><span class="logo">Ω</span><div><b>PROJECT OMEGA</b><small>ONLINE TEST ARENA</small></div></div><div id="connection" class="pill">CONNECTING…</div></div>
+  <div class="stats"><span id="playerTag">PLAYER —</span><span id="population">0 / 12 PLAYERS</span><span id="score">ELIMS 0</span></div>
+  <div id="notice" role="status">Connecting to arena…</div>
+  <div class="crosshair"><i></i><b></b><i></i><em></em></div>
+  <div class="bottom"><div class="health"><span>HP</span><div class="health-track"><div id="healthFill"></div></div><strong id="healthText">100</strong></div><div class="controlsHint">LEFT STICK · MOVE &nbsp; DRAG RIGHT SIDE · AIM</div></div>
+  <div id="stickZone"><div id="stickBase"><div id="stickKnob"></div></div></div>
+  <button id="fire" aria-label="Fire weapon">FIRE</button>
+  <button id="recenter" aria-label="Recenter camera">↻</button>
+  <div id="startPanel"><div class="panel-mark">Ω</div><p class="eyebrow">MULTIPLAYER GREYBOX · BUILD 0.2</p><h1>ENTER THE<br><span>OMEGA ARENA</span></h1><p class="sub">A small online 3D test match. Move, aim and tag other connected players.</p><input id="nickname" maxlength="16" placeholder="Your callsign (3–16 chars)" value="OmegaRookie"><button id="join">JOIN LIVE ARENA</button><small>Touch controls · Browser 3D · Prototype server</small></div>
+</div>
+<script type="module" src="/game.js"></script>
+</body></html>
